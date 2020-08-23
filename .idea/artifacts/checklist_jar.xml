@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="checklist:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/checklist_jar</output-path>
+    <root id="archive" name="checklist.jar">
+      <element id="module-output" name="checklist" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../jcalendar/lib/jcalendar-1.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../mysql-connector-java-8.0.21/mysql-connector-java-8.0.21.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
