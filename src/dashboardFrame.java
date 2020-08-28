@@ -103,7 +103,7 @@ public class dashboardFrame {
                 " taskDetail as 'Task Details'," +
                 " IF(taskStatus = 0, 'Pending', 'Completed') as 'Status'," +
                 " IF(taskPriority = 0, 'Normal', 'Urgent') as 'Priority'" +
-                " FROM tasklist ORDER BY taskStatus ASC, taskPriority DESC"; // Task Status: Pending = 0, Completed = 1 - See pending urgent tasks first
+                " FROM tasklist ORDER BY taskStatus ASC, dateDue ASC, taskPriority DESC"; // Task Status: Pending = 0, Completed = 1 - See pending urgent tasks first
         ResultSet rs = sm.executeQuery(column_query);
         JTable allTable = new JTable(buildTableModel(rs)){
             @Override
